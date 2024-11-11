@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  color: orangered;
+}
+
+h2 {
+  font-size: 3rem;
+  color: orange;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+h4 {
+  font-size: 2rem;
+  color: white;
+}
+
+p {
+  font-size: 1.6rem;
+  color: whitesmoke;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 1050px) {
+  h1 {
+    font-size: 3.5rem;
+    color: orangered;
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: orange;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    color: white;
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: whitesmoke;
+  }
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 3rem;
+    color: orangered;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: orange;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    color: white;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+  }
+
+  .main {
+    text-align: center;
+  }
+}

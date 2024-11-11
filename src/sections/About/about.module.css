@@ -1,0 +1,48 @@
+.section_main {
+  padding: 10vh 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.stack {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  & svg {
+    width: 80px;
+    height: 100%;
+  }
+}
+
+.stack_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.info_container {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1050px) {
+  .section_main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .stack {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    & svg {
+      width: 50px;
+      height: 100%;
+    }
+  }
+}

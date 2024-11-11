@@ -1,0 +1,40 @@
+.section_main {
+  height: 80vh;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+
+  & button {
+    width: 3rem;
+    height: 3rem;
+    background-color: orange;
+    color: #1f1f1f;
+    font-weight: bold;
+    border-radius: 16px;
+  }
+
+  & a {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section_main {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .buttons {
+    justify-content: center;
+  }
+}

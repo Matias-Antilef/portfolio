@@ -1,0 +1,14 @@
+.section_main {
+  position: relative;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 390px) {
+  .buttons {
+    justify-content: center;
+  }
+}
