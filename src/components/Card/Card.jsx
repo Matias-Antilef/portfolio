@@ -48,9 +48,13 @@ function Card({ data }) {
         </section>
 
         <section className={styles.buttons}>
-          <LinkStyled linkRef="#">Ir al proyecto</LinkStyled>
+          <LinkStyled linkRef={data.url_proyect}>Ir al proyecto</LinkStyled>
           <section className=" absolute top-0 right-0 flex gap-5 p-5  rounded-xl ">
-            <a href="#" className="w-[3rem] h-[3rem]">
+            <a
+              href={data.url_github}
+              className="w-[3rem] h-[3rem]"
+              target="_blank"
+            >
               <SVGgithub />
             </a>
           </section>
@@ -66,6 +70,8 @@ Card.propTypes = {
     description: PropTypes.string.isRequired,
     tecnologies: PropTypes.arrayOf(PropTypes.string).isRequired,
     imageMain: PropTypes.string.isRequired,
+    url_github: PropTypes.string.isRequired,
+    url_proyect: PropTypes.string.isRequired,
   }).isRequired,
 };
 

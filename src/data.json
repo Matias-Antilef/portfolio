@@ -11,34 +11,8 @@
       "SVGTailwind",
       "SVGJavaScript",
       "SVGReact"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Games Web",
-    "imageMain": "../public/webgames1.png",
-    "resume": "Consultas de videojuegos con API RAWG",
-    "description": "Desarrollé y desplegué un sitio web para hacer consultas de videojuegos consumiendo la API de RAWG usando principalmente React, enfocandome en mejorar la experiencia de usuario con cargas rapidas y ligeras gracias a lazy load.",
-    "tecnologies": [
-      "SVGHTML",
-      "SVGCSS",
-      "SVGTailwind",
-      "SVGJavaScript",
-      "SVGReact"
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Games Web",
-    "imageMain": "/eldring.webp",
-    "resume": "Consultas de videojuegos con API RAWG",
-    "description": "Desarrollé y desplegué un sitio web para hacer consultas de videojuegos consumiendo la API de RAWG usando principalmente React, enfocandome en mejorar la experiencia de usuario con cargas rapidas y ligeras gracias a lazy load.",
-    "tecnologies": [
-      "SVGHTML",
-      "SVGCSS",
-      "SVGTailwind",
-      "SVGJavaScript",
-      "SVGReact"
-    ]
+    ],
+    "url_github": "https://github.com/Matias-Antilef/web-games",
+    "url_proyect": "https://web-games-sage.vercel.app/"
   }
 ]
