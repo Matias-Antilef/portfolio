@@ -16,9 +16,6 @@ function Home() {
       </p>
 
       <section className={styles.buttons}>
-        <button onClick={() => {}} className=" ">
-          CV
-        </button>
         <a href="https://github.com/Matias-Antilef" target="_blank">
           <SVGgithub />
         </a>
