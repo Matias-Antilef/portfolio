@@ -1,0 +1,12 @@
+.linkStyled {
+  border: 2px solid var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.linkStyled:hover {
+  background-color: var(--accent);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}

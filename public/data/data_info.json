@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "title": "UTLP, gestión para institución educativa",
+    "resume": "Desarrollo en conjunto con un compañero backend, estoy encargado del diseño y desarrollo del front end, tambien estructuro el proyecto usando diagramas UML, casos de uso y figma para los wireframes",
+    "carousel_img": [
+      {
+        "id": 1,
+        "url": "/a.png"
+      },
+      {
+        "id": 2,
+        "url": "/a.png"
+      },
+      {
+        "id": 3,
+        "url": "/a.png"
+      }
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "sub_title": "Sistema de roles",
+        "content": [
+          {
+            "id": 1,
+            "strong": "Administrador",
+            "text": "Acceso total a la gestión de usuarios, clases y configuración general."
+          },
+          {
+            "id": 2,
+            "strong": "Profesor",
+            "text": "Gestión de cursos, tareas, y calificaciones de los estudiantes."
+          },
+          {
+            "id": 3,
+            "strong": "Estudiante",
+            "text": "Acceso a sus cursos, tareas y calificaciones, sin permisos de edición."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Autenticación y autorización",
+        "content": [
+          {
+            "id": 1,
+            "strong": "Auth guard",
+            "text": "Implementación de rutas protegidas dependiendo del rol y la validez del JWT"
+          },
+          {
+            "id": 2,
+            "strong": "Autenticación",
+            "text": "Autenticación basada en JSON Web Tokens (JWT) para asegurar el acceso a recursos según el rol del usuario."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Contexto global y persistencia",
+        "content": [
+          {
+            "id": 1,
+            "strong": "Contexto global",
+            "text": "Uso de useContext para manejar el estado de la aplicación"
+          },
+          {
+            "id": 2,
+            "strong": "Persistencia de estado",
+            "text": "Uso de localstorage para la persistencia del estado global"
+          }
+        ]
+      }
+    ],
+    "stack": [
+      "TypeScript",
+      "React",
+      "Redux",
+      "NodeJS",
+      "ExpressJS",
+      "MySQL",
+      "GIT",
+      "Figma"
+    ],
+    "achievements": [
+      "Contexto global",
+      "Persistencia de datos",
+      "Rutas protegidas",
+      "Implementación de JWT (Json Web Tokents)  "
+    ],
+    "url_demo": "www.youtube.com",
+    "url_linkedin": "www.linkedin.com",
+    "url_github": "www.github.com"
+  }
+]

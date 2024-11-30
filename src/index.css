@@ -1,0 +1,84 @@
+:root {
+  --black: #000000;
+  --black2: #121212;
+  --black3: #1e1e1e;
+  --white: #ffffff;
+  --whitesmoke: #e1dbdb;
+  --accent: #8a4fff;
+  --accent2: #ff4500;
+  --accent_hover: #773af2;
+
+  --h1: 4.5rem;
+  --h2: 3.8rem;
+  --h3: 3.2rem;
+  --h4: 2.8rem;
+  --h5: 2rem;
+  --h6: 1.7rem;
+  --p: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--h1);
+  color: var(--white);
+}
+
+h2 {
+  font-size: var(--h2);
+  color: var(--white);
+}
+
+h3 {
+  font-size: var(--h3);
+  color: var(--white);
+}
+
+h4 {
+  font-size: var(--h4);
+  color: var(--white);
+}
+
+h5 {
+  font-size: var(--h5);
+  color: var(--whitesmoke);
+}
+
+h6 {
+  font-size: var(--h6);
+  color: var(--whitesmoke);
+}
+
+p,
+a,
+li {
+  font-size: var(--p);
+  color: var(--whitesmoke);
+}
+
+a {
+  text-decoration: none;
+  color: var(--whitesmoke);
+}
+
+.main_container {
+  max-width: 1522px;
+  margin: 0 auto;
+}
+.app_container {
+  background-color: var(--black);
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  max-width: 65vw;
+}
