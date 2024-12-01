@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router";
 import MainPage from "./views/MainPage";
-import ProjectInfo from "./views/ProjectInfo";
+import ProjectInfo from "./views/ProjectInfo/ProjectInfo";
 import { PublicRoutes } from "../routes/routes";
 import ScrollToTop from "./components/scrollToTop";
 

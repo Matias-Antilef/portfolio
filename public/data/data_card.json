@@ -6,8 +6,6 @@
     "img": "/a.png",
     "video": "",
     "stack": [
-      "HTML",
-      "CSS",
       "TypeScript",
       "React",
       "Redux",
@@ -23,16 +21,6 @@
     "status": false,
     "title": "Ecommerce",
     "img": "/a.png",
-    "stack": [
-      "HTML",
-      "CSS",
-      "TypeScript",
-      "NextJS",
-      "Redux",
-      "Java",
-      "MySQL",
-      "GIT",
-      "Figma"
-    ]
+    "stack": ["TypeScript", "NextJS", "Redux", "Java", "MySQL", "GIT", "Figma"]
   }
 ]

@@ -6,15 +6,18 @@
     "carousel_img": [
       {
         "id": 1,
-        "url": "/a.png"
+        "url": "/a.png",
+        "alt": "alt"
       },
       {
         "id": 2,
-        "url": "/a.png"
+        "url": "/a.png",
+        "alt": "alt"
       },
       {
         "id": 3,
-        "url": "/a.png"
+        "url": "/a.png",
+        "alt": "alt"
       }
     ],
     "sections": [

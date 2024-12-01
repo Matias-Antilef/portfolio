@@ -1,7 +1,8 @@
 import { Link, useParams } from "react-router-dom";
 import styles from "./project-info.module.css";
 import { useEffect, useState } from "react";
-import { PublicRoutes } from "../../routes/routes";
+import { PublicRoutes } from "../../../routes/routes";
+import Carousel from "./components/Carousel";
 
 function ProjectInfo() {
   const { id } = useParams();
@@ -19,10 +20,7 @@ function ProjectInfo() {
   return (
     <div className={styles.proyect_container}>
       <div className={styles.carousel_container}>
-        {data &&
-          data.carousel_img.map((res) => (
-            <img key={res.id} src={res.url} alt="imagen-proyecto" />
-          ))}
+        {data && <Carousel data={data.carousel_img} />}
       </div>
       <div className={styles.links_container}>
         <Link className={styles.back} to={`/${PublicRoutes.HOME}`}>
