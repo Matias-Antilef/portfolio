@@ -18,6 +18,7 @@
   font-weight: bold;
   pointer-events: none;
 }
+
 .status_false {
   pointer-events: none;
   position: absolute;

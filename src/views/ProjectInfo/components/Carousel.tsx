@@ -4,10 +4,26 @@ import styles from "./carousel.module.css";
 
 function Carousel({ data }) {
   return (
-    <div>
+    <div className={styles.carousel}>
+      <button className={styles.arrow_left}>
+        <img src="/svg/arrow_left.svg" alt="left" />
+      </button>
       {data.map((item) => (
-        <img key={item.id} src={item.url} alt={item.alt} />
+        <img
+          key={item.id}
+          src={item.url}
+          alt={item.alt}
+          className={styles.slide}
+        />
       ))}
+      <button className={styles.arrow_right}>
+        <img src="/svg/arrow_right.svg" alt="right" />
+      </button>
+      <span className={styles.indicators}>
+        {data.map((_, idx) => (
+          <button key={idx} onClick={() => {}}></button>
+        ))}
+      </span>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import HeroSection from "../components/HeroSection/HeroSection";
 import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
-import data_card from "../../public/data/data_card.json";
+import data_card from "../data/data_card.json";
 import CardProject from "../components/ui/CardProject/CardProject";
 
 function MainPage() {

@@ -9,7 +9,7 @@ function ProjectInfo() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/data_info.json")
+    fetch("/data_info.json")
       .then((res) => res.json())
       .then((res) => {
         const filter = res.find((project) => project.id === parseInt(id));
@@ -19,30 +19,33 @@ function ProjectInfo() {
 
   return (
     <div className={styles.proyect_container}>
+      <div className={styles.links_navbar}>
+        <nav className={styles.nav}>
+          <Link className={styles.back} to={`/${PublicRoutes.HOME}`}>
+            Volver
+          </Link>
+          <Link className={styles.demo} to={"#"}>
+            Ver demo
+          </Link>
+          <Link
+            className={styles.linkedin}
+            to={"https://www.google.com"}
+            target="_blank"
+          >
+            Linkedin
+          </Link>
+          <Link
+            className={styles.github}
+            to={"https://www.google.com"}
+            target="_blank"
+          >
+            Github
+          </Link>
+        </nav>
+      </div>
+
       <div className={styles.carousel_container}>
         {data && <Carousel data={data.carousel_img} />}
-      </div>
-      <div className={styles.links_container}>
-        <Link className={styles.back} to={`/${PublicRoutes.HOME}`}>
-          Volver
-        </Link>
-        <Link className={styles.demo} to={"#"}>
-          Ver demo
-        </Link>
-        <Link
-          className={styles.linkedin}
-          to={"https://www.google.com"}
-          target="_blank"
-        >
-          Linkedin
-        </Link>
-        <Link
-          className={styles.github}
-          to={"https://www.google.com"}
-          target="_blank"
-        >
-          Github
-        </Link>
       </div>
       <div className={styles.description_container}>
         <section className={styles.resume_container}>

@@ -8,9 +8,9 @@
   --accent2: #ff4500;
   --accent_hover: #773af2;
 
-  --h1: 4.5rem;
-  --h2: 3.8rem;
-  --h3: 3.2rem;
+  --h1: 4rem;
+  --h2: 3.5rem;
+  --h3: 2.5rem;
   --h4: 2.8rem;
   --h5: 2rem;
   --h6: 1.7rem;
@@ -68,6 +68,7 @@ a {
 .main_container {
   max-width: 1522px;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 .app_container {
   background-color: var(--black);

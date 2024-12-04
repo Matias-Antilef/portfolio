@@ -8,7 +8,7 @@ function HeroSection() {
         <div className={styles.hero_navbar}>
           <div className={styles.avatar_container}>
             <img src="/a.png" alt="" />
-            <div>
+            <div className={styles.header_navbar}>
               <p>Desarrollador front end</p>
               <p>Matías Antilef</p>
             </div>

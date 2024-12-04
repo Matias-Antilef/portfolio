@@ -1,3 +1,10 @@
+.proyects_section {
+  padding: 1rem;
+  & h1 {
+    padding: 2rem 0;
+  }
+}
+
 .projects_container {
   display: flex;
   flex-wrap: wrap;

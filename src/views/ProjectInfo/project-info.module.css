@@ -2,22 +2,13 @@
   min-height: 100vh;
   max-width: 1522px;
   margin: 0 auto;
-  height: 300vh;
+  height: max-content;
+  position: relative;
 }
 
 .carousel_container {
-  display: flex;
-  overflow: hidden;
+  height: 80vh;
   width: 100%;
-  height: 70vh;
-  align-items: center;
-  justify-content: center;
-
-  & img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .resume_header {
@@ -39,10 +30,14 @@
 
 .list_stack {
   flex: 1;
+  height: max-content;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 
   & img {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
   }
   & ul {
     display: flex;
@@ -58,9 +53,9 @@
       background: var(--black3);
       user-select: none;
       height: max-content;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.8rem;
       border-radius: 12px;
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 }
@@ -75,27 +70,8 @@
     height: 100%;
 
     & li {
+      font-size: 1.5rem;
     }
-  }
-}
-
-.links_container {
-  position: sticky;
-  top: 0;
-  background-color: var(--black2);
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  & a {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
   }
 }
 
@@ -158,4 +134,23 @@
     background-color: var(--black3);
     transition: all 0.2s ease-in-out;
   }
+}
+
+.links_navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  background-color: var(--black3);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 2rem;
 }
