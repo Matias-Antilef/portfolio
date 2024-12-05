@@ -1,22 +1,23 @@
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./project-info.module.css";
-import { useEffect, useState } from "react";
 import { PublicRoutes } from "../../../routes/routes";
-import Carousel from "./components/Carousel";
+import { useState } from "react";
 
 function ProjectInfo() {
-  const { id } = useParams();
-  const [data, setData] = useState(null);
+  const images = ["/a.png", "/a.png", "/a.png", "/a.png"];
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    fetch("/data_info.json")
-      .then((res) => res.json())
-      .then((res) => {
-        const filter = res.find((project) => project.id === parseInt(id));
-        setData(filter);
-      });
-  }, [id]);
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
   return (
     <div className={styles.proyect_container}>
       <div className={styles.links_navbar}>
@@ -44,58 +45,38 @@ function ProjectInfo() {
         </nav>
       </div>
 
-      <div className={styles.carousel_container}>
-        {data && <Carousel data={data.carousel_img} />}
+      <div className={styles.carouselContainer}>
+        <div
+          className={styles.carousel}
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`Slide ${index + 1}`}
+              className={styles.image}
+            />
+          ))}
+        </div>
       </div>
-      <div className={styles.description_container}>
-        <section className={styles.resume_container}>
-          <div className={styles.resume_header}>
-            <h2>Proyecto {data && data.title} </h2>
-            <p> {data && data.resume} </p>
-          </div>
-          <div className={styles.resume_achievements}>
-            <div className={styles.list_achievements}>
-              <ul>
-                {data &&
-                  data.achievements?.map((achievement, index) => (
-                    <li key={index}>✅ {achievement}</li>
-                  ))}
-              </ul>
-            </div>
-            <div className={styles.list_stack}>
-              <h5>Aplicación web ful stack</h5>
-              <ul>
-                {data &&
-                  data.stack?.map((stack, index) => (
-                    <li key={index}>
-                      <img
-                        src={`/svg/${stack.toLowerCase()}.svg`}
-                        alt={`${stack} icon`}
-                        className="object-cover"
-                      />
-                      {stack}
-                    </li>
-                  ))}
-              </ul>
-            </div>
-          </div>
-        </section>
+      <div className={styles.buttonContainer}>
+        <button onClick={handlePrev} className={styles.prevButton}>
+          ❮
+        </button>
+        <button onClick={handleNext} className={styles.nextButton}>
+          ❯
+        </button>
+      </div>
 
-        <div className={styles.sections_container}>
-          {data &&
-            data.sections.map((res) => (
-              <section key={res.id} className={styles.section}>
-                <h5> {res.sub_title} </h5>
-                <ul>
-                  {res.content.map((cont) => (
-                    <li key={cont.id}>
-                      <b> {cont.strong}: </b>
-                      {cont.text}
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ))}
+      <div>
+        <h1>UTLP Gestión academaca</h1>
+
+        <div>
+          <ul>
+            <li>Rutas protegidas</li>
+            <li>Sistema de roles</li>
+          </ul>
         </div>
       </div>
     </div>

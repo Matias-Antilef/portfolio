@@ -5,135 +5,56 @@
   height: max-content;
   position: relative;
 }
+.carouselContainer {
+  width: 100%;
+  max-height: 85vh;
+  height: max-content;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
 
-.carousel_container {
-  height: 80vh;
+.buttonContainer {
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
   width: 100%;
 }
 
-.resume_header {
-  padding: 2rem 0;
-
-  & h2 {
-    padding-bottom: 0.5rem;
-  }
-
-  & p {
-    font-size: 1.3rem;
-  }
+.image {
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.resume_achievements {
-  display: flex;
-  padding: 2rem 0;
-}
-
-.list_stack {
-  flex: 1;
-  height: max-content;
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
-
-  & img {
-    height: 20px;
-    width: 20px;
-  }
-  & ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    height: 100%;
-    align-items: center;
-
-    & li {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: var(--black3);
-      user-select: none;
-      height: max-content;
-      padding: 0.5rem 0.8rem;
-      border-radius: 12px;
-      font-size: 1rem;
-    }
-  }
-}
-
-.list_achievements {
-  flex: 1;
-
-  & ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-
-    & li {
-      font-size: 1.5rem;
-    }
-  }
-}
-
-.description_container {
-  background-color: var(--black5);
-}
-
-.resume_container {
-  padding: 1.5rem 0;
-}
-.sections_container {
-  & .section {
-    padding-bottom: 1rem;
-
-    & li {
-      padding-bottom: 0.5rem;
-    }
-
-    & h5 {
-      padding-bottom: 1rem;
-    }
-
-    & b {
-      color: white;
-    }
-  }
-}
-
-.back {
-  transition: all 0.2s ease-in-out;
+.prevButton,
+.nextButton {
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  z-index: 1000;
 
   &:hover {
     background-color: var(--black3);
-    transition: all 0.2s ease-in-out;
   }
 }
 
-.demo {
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: var(--accent);
-    transition: all 0.2s ease-in-out;
-  }
+.prevButton {
+  left: 0;
 }
 
-.linkedin {
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: #0077b5;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
-.github {
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: var(--black3);
-    transition: all 0.2s ease-in-out;
-  }
+.nextButton {
+  right: 0;
 }
 
 .links_navbar {
